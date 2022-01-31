@@ -1,7 +1,7 @@
 # Neovim
 
 ## Neovim from scratch
-Download the preconfigured files using lua from [ChrisAtMachine][https://github.com/LunarVim/Neovim-from-scratch]
+Download the preconfigured files using lua from [ChrisAtMachine](https://github.com/LunarVim/Neovim-from-scratch)
 
 ## History edited by me
 - 1-2022
