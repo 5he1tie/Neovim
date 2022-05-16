@@ -1,16 +1,17 @@
 # Neovim
 
 ## Neovim from scratch
-I used the preconfigured files using lua from [ChrisAtMachine](https://github.com/LunarVim/Neovim-from-scratch)
+I used the preconfigured files using lua from [ChrisAtMachine](https://github.com/LunarVim/Neovim-from-scratch).
 I added and modified some things as I wanted.
+
+- Path : ~/.config/nvim/
 
 ## History edited by me
 - 5-2022
-  - Fix
-    - fix some configurations because of updating plugins.
-      1. cmp.lua
-      2. nvim-tree.lua
-      3. treesitter.lua
+  - fix some configurations because of updating plugins.
+    1. cmp.lua
+    2. nvim-tree.lua
+    3. treesitter.lua
 - 1-2022
   - Plugins
     1. Pocco81/AutoSave.nvim
