@@ -46,10 +46,10 @@ vim.cmd "set whichwrap+=<,>,[,],h,l"
 vim.cmd [[set iskeyword+=-]]
 vim.cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work
 
-vim.cmd ([[
-" " fix python indentation
- filetype plugin indent on
- let g:python_recommended_style = 0
- autocmd FileType py setlocal ts=2 sw=2 sts=2 smartindent noexpandtab
- autocmd BufEnter *.\(py\) setlocal ts=2 sw=2 sts=2 noexpandtab
-]])
+-- vim.cmd ([[
+-- " " fix python indentation
+--  filetype plugin indent on
+--  let g:python_recommended_style = 0
+--  autocmd FileType py setlocal ts=2 sw=2 sts=2 smartindent noexpandtab
+--  autocmd BufEnter *.\(py\) setlocal ts=2 sw=2 sts=2 noexpandtab
+-- ]])

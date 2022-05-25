@@ -39,6 +39,10 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
 keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 
+-- DISABLE UPPER,LOWER CASE KEY MAP
+keymap("n", "gu", "<nop>", opts)
+keymap("n", "gU", "<nop>", opts)
+
 -- Insert --
 -- Press jk fast to enter
 keymap("i", "jk", "<ESC>", opts)
@@ -61,6 +65,10 @@ keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
+
+-- disable upper,lower case key map
+keymap("x", "u", "<nop>", opts)
+keymap("x", "U", "<nop>", opts)
 
 -- Terminal --
 -- Better terminal navigation

@@ -1,10 +1,17 @@
 
 require("todo-comments").setup {
-  -- PERF: s
-  -- TODO: dsad
+  -- TODO:
   -- JSLee:
+  -- MOD  
+  -- END_MOD:
   keywords = {
     JSLee = {
+      icon = " "
+    },
+    MOD = {
+      icon = " "
+    },
+    END_MOD = {
       icon = " "
     }
   },
