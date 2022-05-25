@@ -26,3 +26,4 @@ configs.setup {
     max_file_lines = nil
   }
 }
+

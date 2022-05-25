@@ -13,12 +13,12 @@ I added and modified some things as I wanted.
     2. nvim-tree.lua
     3. treesitter.lua
 - 1-2022
-  - Plugins
+  - Add Plugins
     1. Pocco81/AutoSave.nvim
     2. folke/todo-comments.nvim
     3. bluz71/vim-nightfly-guicolors
     4. blueyed/vim-diminactive
     5. p00f/nvim-ts-rainbow
   - Keymaps
-    * <C-c> to <ESC> : InsertLeave doesn't work with <C-c>
+    * Control-c to ESC : InsertLeave doesn't work with Control-C
     * modify some conflict keymaps
