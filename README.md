@@ -4,6 +4,10 @@
 Download the preconfigured files using lua from [ChrisAtMachine](https://github.com/LunarVim/Neovim-from-scratch)
 
 ## History edited by me
+- 5-2022
+  - modify configuration
+    * nvim-tree : remove auto-close
+    * disable preety fold
 - 1-2022
   - Add Plugins
     1. Pocco81/AutoSave.nvim
