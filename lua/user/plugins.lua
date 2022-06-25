@@ -60,11 +60,12 @@ return packer.startup(function(use)
   use "folke/which-key.nvim"
   use "Pocco81/AutoSave.nvim" -- auto save
   use { "folke/todo-comments.nvim", requires = "nvim-lua/plenary.nvim", config = function() end}
-  use{ 'anuvyklack/pretty-fold.nvim',
-    config = function()
-      require('pretty-fold').setup{}
-      require('pretty-fold.preview').setup()
-    end
+  use { 'anuvyklack/pretty-fold.nvim',
+       requires = 'anuvyklack/nvim-keymap-amend', -- only for preview
+       config = function()
+          require('pretty-fold').setup()
+          require('pretty-fold.preview').setup()
+       end
   }
 
   -- Colorschemes
