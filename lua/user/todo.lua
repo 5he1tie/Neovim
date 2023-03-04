@@ -4,6 +4,7 @@ require("todo-comments").setup {
   -- JSLee:
   -- MOD  
   -- END_MOD:
+  -- INFO 
   keywords = {
     JSLee = {
       icon = " "
@@ -13,6 +14,9 @@ require("todo-comments").setup {
     },
     END_MOD = {
       icon = " "
+    },
+    INFO = {
+      colors = ""
     }
   },
   highlight = {

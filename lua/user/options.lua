@@ -34,6 +34,8 @@ local options = {
   sidescrolloff = 8,
   guifont = "monospace:h17",               -- the font used in graphical neovim applications
 
+  foldmethod="expr",
+  foldexpr="nvim.treesitter#foldexpr()",
 }
 
 vim.opt.shortmess:append "c"
@@ -46,10 +48,12 @@ vim.cmd "set whichwrap+=<,>,[,],h,l"
 vim.cmd [[set iskeyword+=-]]
 vim.cmd [[set formatoptions-=cro]] -- TODO: this doesn't seem to work
 
--- vim.cmd ([[
--- " " fix python indentation
---  filetype plugin indent on
---  let g:python_recommended_style = 0
---  autocmd FileType py setlocal ts=2 sw=2 sts=2 smartindent noexpandtab
---  autocmd BufEnter *.\(py\) setlocal ts=2 sw=2 sts=2 noexpandtab
--- ]])
+vim.cmd ([[
+" fix python indentation
+ filetype plugin indent on
+ let g:python_recommended_style = 0
+ autocmd FileType py setlocal smartindent expandtab ts=2 sw=2 sts=2
+ autocmd BufEnter *.\(py\) setlocal smartindent expandtab ts=2 sw=2 sts=2
+ " autocmd FileType py setlocal ts=2 sw=2 sts=2 smartindent noexpandtab
+ " autocmd BufEnter *.\(py\) setlocal ts=2 sw=2 sts=2 noexpandtab
+]])

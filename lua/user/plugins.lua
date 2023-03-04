@@ -1,4 +1,4 @@
-local fn = vim.fn
+ local fn = vim.fn
 
 -- Automatically install packer
 local install_path = fn.stdpath "data" .. "/site/pack/packer/start/packer.nvim"
@@ -60,11 +60,18 @@ return packer.startup(function(use)
   use "folke/which-key.nvim"
   use "Pocco81/AutoSave.nvim" -- auto save
   use { "folke/todo-comments.nvim", requires = "nvim-lua/plenary.nvim", config = function() end}
-  -- use{ 'anuvyklack/pretty-fold.nvim',
-  --   config = function()
-  --     require('pretty-fold').setup{}
+  -- use {'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async'}
+  use { 'anuvyklack/pretty-fold.nvim',
+    config = function()
+        require('pretty-fold').setup()
+    end
+  }
+  -- use { 'anuvyklack/pretty-fold.nvim',
+  --  requires = 'anuvyklack/nvim-keymap-amend', -- only for preview
+  --  config = function()
+  --     require('pretty-fold').setup()
   --     require('pretty-fold.preview').setup()
-  --   end
+  --  end
   -- }
 
   -- Colorschemes
